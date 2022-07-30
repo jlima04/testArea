@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%; 
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(https://wallpaperaccess.com/full/3794456.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}  
+.nav-links ul li a{
+    color: rgba(255, 255, 255, 0.904);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.child{
+    background-color: red;
+    width: 50%;
+    height: 100px;
+    border: 1px solid black}
+.parent{
+   display: flex;
+   flex-direction: column-reverse;
+   flex-wrap: wrap-reverse;
+   justify-content: left;
+   align-items: center;
+
+   
+  }
+ .container{
+    grid: 50cm;
+    grid-column: auto;
+ }
+
+:root{
+    --text-color: rgba(243, 243, 243, 0);
+}
+.container{
+    color: var(--text-color);
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+width: 150px;
+}
+.nav-links{
+flex: 1;
+text-align: right;
+
+}
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}
+
+footer{
+    color: aliceblue;
+    display: flex;
+    padding: 2px 10%;
+    text-align: center;
+    margin: 2px;
+    height: 100px;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;  
+    margin: auto;
+    transition: 1s;
+}
+.nav-links ul li:hover:after{
+    width: 100%;
+}
+
+.hypotenuseProgram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.color {
+    background-color: rgba(255, 255, 255, 0.56);
+    padding: 40px;
+}
+label{
+    font-size: 30px;
+}
+
+.Count{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+#counter{
+    display: block;
+    text-align: center;
+    font: 50px;
+    padding: 40px
+}
+
+.dice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+#dice1 , #dice2, #dice3{
+    display: block;
+    font: 100px;
+}
