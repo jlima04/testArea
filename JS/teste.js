@@ -421,12 +421,34 @@ console.log("Hello", namee)*/
 
 // do while loop mesma coisa mas primeiro vc faz algo para dps esse algo ser checkado pela while loop
 
-let nameUser;
+/*let nameUser;
 
 do {
     nameUser = window.prompt("name");
 } while (nameUser == "" || nameUser == null);
 
-console.log("Hello", nameUser);
+console.log("Hello", nameUser);*/
 
-// for loops
+// for loops  repente o codigo por um qntd de tempo nesse ex ate chegar a algo
+
+/*for( let i = 50; i <= 100; i += 3 ){
+    console.log(i);
+} */ 
+
+
+// break & continue statments
+
+for(let o = 1; o <= 15; o += 2){
+    if (o == 13) {
+        continue;  // faz o codigo pular o numero escolhido 
+    }
+    console.log(o);
+}
+
+for (let u = 1; u < 20; u += 1){
+    if (u == 10) {
+        break
+    };
+    console.log(u); 
+}
+
